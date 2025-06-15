@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position 1 practice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        .container {
+            width: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+        }
+
+        .card_bg_img {
+            background: url(../images/food.png);
+            background-size: cover;
+            width: 100%;
+            height: auto;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .card_item {
+            width: 250px;
+            height: 180px;
+            border: 1px solid #000;
+            position: relative;
+        }
+
+        .parking {
+            background: url(../images/wifi_bgimg.svg);
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+        .breakfast {
+            background: url(../images/dinner_dining_bg.svg);
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+        .fitness {
+            background: url(../images/exercise_img1bg.svg);
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+        .meeting {
+            background: url(../images/business_center_bg.svg);
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+
+        .card_item h1 {
+            padding-top: 72px;
+            padding-left: 10px;
+            font-size: 30px;
+        }
+
+        .card_icon {
+            background-color: chocolate;
+            border-bottom-right-radius: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 22px 28px;
+        }
+
+        .card_icon i {
+            color: #fff;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Position 1 Practice</h1>
+
+        <div class="cards">
+            <div class="card_item parking">
+                <div class="card_icon">
+                    <i class="fa-solid fa-square-parking"></i>
+                </div>
+                <h1>Free<br> parking</h1>
+            </div>
+            <div class="card_item breakfast">
+                <div class="card_icon">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                </div>
+                <h1>Free<br> Breakfast</h1>
+            </div>
+            <div class="card_item fitness">
+                <div class="card_icon">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <h1>Fitness<br> Center</h1>
+            </div>
+            <div class="card_item meeting">
+                <div class="card_icon">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <h1>Meetings<br>& Events</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
